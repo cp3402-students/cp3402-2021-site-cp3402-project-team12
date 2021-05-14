@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # VVV Custom Site Provisioner
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6fc9d45abb02454aa052771bda2d40ff)](https://www.codacy.com/gh/Varying-Vagrant-Vagrants/custom-site-template?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Varying-Vagrant-Vagrants/custom-site-template&amp;utm_campaign=Badge_Grade)
@@ -262,3 +263,7 @@ custom:
     admin_email: admin@local.test # Only on install of WordPress
     live_url: http://example.com # Redirect any uploads not found locally to this domain
 ```
+=======
+# cp3402-2021-site-cp3402-project-team12
+cp3402-2021-site-cp3402-project-team12 created by GitHub Classroom
+>>>>>>> 41c05ee9e9ea9583ac05a87f010a6f957f31019e
