@@ -78,7 +78,8 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-	margin: 0;
+	margin: 0 auto;
+  max-width: 2000px;
 }
 
 /**
@@ -96,6 +97,7 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 }
+
 
 /* Grouping content
 	 ========================================================================== */
@@ -488,7 +490,11 @@ ol {
 }
 
 ul {
-	list-style: disc;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: lightblue;
 }
 
 ol {
@@ -499,6 +505,18 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+}
+
+li a{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #555;
+  color: white;
 }
 
 dt {
