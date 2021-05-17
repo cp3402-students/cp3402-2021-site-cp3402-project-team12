@@ -489,12 +489,25 @@ ol {
 	margin: 0 0 1.5em 3em;
 }
 
+.site-branding, .main-navigation{
+  display: inline-block;
+}
+
+.site-footer{
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background-color: lightblue;
+  text-align: center;
+}
+
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: lightblue;
+  list-style:none;
+  text-align:center;
 }
 
 ol {
@@ -505,6 +518,10 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+}
+
+li{
+  display:inline;
 }
 
 li a{
@@ -518,6 +535,7 @@ li a:hover{
   background-color: #555;
   color: white;
 }
+
 
 dt {
 	font-weight: 700;
@@ -552,6 +570,8 @@ table {
 --------------------------------------------- */
 a {
 	color: #4169e1;
+  display:inline-block;
+  padding:10px;
 }
 
 a:visited {
