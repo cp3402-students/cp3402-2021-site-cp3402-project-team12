@@ -135,7 +135,6 @@ a {
  */
 abbr[title] {
 	border-bottom: none;
-	text-decoration: underline;
 	text-decoration: underline dotted;
 }
 
@@ -715,9 +714,9 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
+.site-main,
 .posts-navigation,
-.site-main
+.site-main,
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -969,7 +968,7 @@ textarea {
 }
 
 
-/* Additional changes  */
+/* Some Additional changes  */
 .custom-logo-link img{
   max-width:10%;
 }
