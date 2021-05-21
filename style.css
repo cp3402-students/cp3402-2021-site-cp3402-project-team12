@@ -967,3 +967,21 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+
+/* Additional changes  */
+.custom-logo-link img{
+  max-width:10%;
+}
+
+.main-navigation ul{
+  border: 1px solid blanchedalmond;
+}
+
+.main-navigation li{
+  margin:10px;
+}
+
+.site-branding{
+  background:#fdfdfd;
+}
