@@ -1,5 +1,5 @@
 /*!
-Theme Name: joemama
+Theme Name: team12theme
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -9,13 +9,13 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: joemama
+Text Domain: team12theme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-joemama is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+team12theme is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -67,8 +67,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
+  font-family: sans-serif;
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 /* Sections
@@ -78,10 +80,8 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-	margin: 0 auto;
-  max-width: 2000px;
+  margin: 0 auto;
 }
-
 /**
  * Render the `main` element consistently in IE.
  */
@@ -677,11 +677,264 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-
+/*--------------------------------------------------------------
+## Global layouts
+--------------------------------------------------------------*/
+.site-content {
+  padding: 1em;
+}
+.site-content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.header-image {
+  max-height: 60vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background-size: cover;
+}
 
+.header-image img {
+  display: block;
+  width: 50vw;
+  background-size: cover;
+}
+
+.site-header {
+  position: relative;
+  font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: #fff;
+  background-color: #e78d39;
+}
+
+@media screen and (min-width: 600px) {
+  .site-header {
+    padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 65px;
+}
+
+.custom-logo-link {
+  margin-right: 1em;
+}
+
+.custom-logo-link img {
+  display: block;
+  height: 75px;
+  width: auto;
+}
+
+.site-branding__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 65px;
+}
+
+.site-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+.site-title a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-title a:hover, .site-title a:focus {
+  text-decoration: underline;
+}
+
+.site-description {
+  margin: 0;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 100;
+}
+@media screen and (min-width: 900px) {
+  .site-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .site-branding {
+    width: 35%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  .site-navigation {
+    width: 55%;
+  }
+}
+
+/*
+Header Menu
+*/
+.main-navigation {
+  display: block;
+  font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-weight: 400;
+  clear: left;
+}
+
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-top: 1em;
+  padding-left: 0;
+}
+
+.main-navigation ul ul {
+  display: none;
+  top: 1.5em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  top: 0;
+}
+
+.main-navigation ul ul li {
+  padding-left: 1em;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.main-navigation a {
+  display: inline-block;
+  width: 100%;
+  padding: .5em 1em .5em 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  text-decoration: underline;
+}
+
+.main-navigation .menu-item-has-children,
+.main-navigation .page_item_has_children {
+  min-width: 218px;
+}
+
+.main-navigation .menu-item-has-children > a,
+.main-navigation .page_item_has_children > a {
+  padding-right: 2em;
+}
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 1.2em 1.2em 0 0;
+  padding: .6em .8em;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer {
+  position: absolute;
+  font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: #fff;
+  background-color: #e78d39;
+  text-align: center;
+  width: 100%;
+}
+
+.site-footer a {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer a:hover, .site-footer a:focus {
+  text-decoration: underline;
+}
+.site-footer-main-div {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+  padding-top: 10px;
+}
+.site-info {
+  margin: 1em 0 1em auto;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.footer-social-menu{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-social-menu ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer-social-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  border-radius: 100%;
+}
+.footer-social-menu ul li a{
+  font-size: 25px;
+}
+.footer-social-menu ul li a i{
+  line-height: 50px;
+}
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
@@ -777,6 +1030,9 @@ textarea {
 	text-align: end;
 	flex: 1 0 50%;
 }
+
+/* TEST
+--------------------------------------------- */
 
 /* Posts and pages
 --------------------------------------------- */
