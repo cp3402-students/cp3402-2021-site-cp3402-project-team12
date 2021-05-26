@@ -15,7 +15,7 @@
 	<?php get_sidebar( 'footer' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-footer__wrap">
+		<div class="site-footer-main-div">
             <?php
             printf( 'Townsville Jazz Club 2021 ©');
             ?>
@@ -27,24 +27,15 @@
             <?php
             printf( 'Terms of Use');
             ?>
-			<div class="social-menu">
+			<div class="footer-social-menu">
 				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
 				<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
 				</script>
-
 				<ul>
-					<li>
-						<a href="#">
-							<i class="fab fa-facebook-f icon"></i>    </a>
-					</li>
-					<li>
-						<a href="#"><i class="fab fa-twitter icon"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-					<li>
-						<a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
 				</ul>
 			</div>
 			<div class="site-info">
