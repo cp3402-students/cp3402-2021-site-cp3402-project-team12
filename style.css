@@ -98,6 +98,7 @@ h1 {
 	margin: 0.67em 0;
 }
 
+
 /* Grouping content
 	 ========================================================================== */
 
@@ -136,7 +137,6 @@ a {
  */
 abbr[title] {
 	border-bottom: none;
-	text-decoration: underline;
 	text-decoration: underline dotted;
 }
 
@@ -488,8 +488,25 @@ ol {
 	margin: 0 0 1.5em 3em;
 }
 
+.site-branding, .main-navigation{
+  display: inline-block;
+}
+
+.site-footer{
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background-color: lightblue;
+  text-align: center;
+}
+
 ul {
-	list-style: disc;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: lightblue;
+  list-style:none;
+  text-align:center;
 }
 
 ol {
@@ -501,6 +518,23 @@ li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
+
+li{
+  display:inline;
+}
+
+li a{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #555;
+  color: white;
+}
+
 
 dt {
 	font-weight: 700;
@@ -535,6 +569,8 @@ table {
 --------------------------------------------- */
 a {
 	color: #4169e1;
+  display:inline-block;
+  padding:10px;
 }
 
 a:visited {
@@ -969,9 +1005,9 @@ Header Menu
 }
 
 .site-main .comment-navigation,
-.site-main
+.site-main,
 .posts-navigation,
-.site-main
+.site-main,
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -1223,4 +1259,22 @@ Header Menu
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+
+/* Some Additional changes  */
+.custom-logo-link img{
+  max-width:10%;
+}
+
+.main-navigation ul{
+  border: 1px solid blanchedalmond;
+}
+
+.main-navigation li{
+  margin:10px;
+}
+
+.site-branding{
+  background:#fdfdfd;
 }
