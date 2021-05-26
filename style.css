@@ -1,5 +1,5 @@
 /*!
-Theme Name: joemama
+Theme Name: team12theme
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -9,13 +9,13 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: joemama
+Text Domain: team12theme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-joemama is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+team12theme is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -659,19 +659,23 @@ textarea {
 --------------------------------------------------------------*/
 .header-image {
   max-height: 60vh;
+  width: 100%;
   overflow: hidden;
+  margin: 0 auto;
+  background-size: cover;
 }
 
 .header-image img {
   display: block;
   width: 50vw;
+  background-size: cover;
 }
 
 .site-header {
   position: relative;
   font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   color: #fff;
-  background-color: #002254;
+  background-color: #e78d39;
 }
 
 @media screen and (min-width: 600px) {
@@ -734,7 +738,6 @@ textarea {
   font-style: italic;
   font-weight: 100;
 }
-
 @media screen and (min-width: 900px) {
   .site-header {
     display: -webkit-box;
@@ -827,17 +830,6 @@ Header Menu
 .main-navigation .page_item_has_children > a {
   padding-right: 2em;
 }
-
-button.dropdown-toggle {
-  position: absolute;
-  right: 0;
-  border: none;
-  background: inherit;
-  color: white;
-  line-height: 1.5em;
-  padding: .4em 1em .4em .5em;
-}
-
 .menu-toggle {
   position: absolute;
   top: 0;
@@ -854,12 +846,12 @@ button.dropdown-toggle {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-  position: relative;
-  padding: 1em;
+  position: absolute;
   font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   color: #fff;
-  background-color: #002254;
+  background-color: #e78d39;
   text-align: center;
+  width: 100%;
 }
 
 .site-footer a {
@@ -871,15 +863,41 @@ button.dropdown-toggle {
 .site-footer a:hover, .site-footer a:focus {
   text-decoration: underline;
 }
-.site-footer__wrap {
-  max-width: 1080px;
-  margin: 0 auto;
+.site-footer-main-div {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+  padding-top: 10px;
 }
 .site-info {
   margin: 1em 0 1em auto;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+}
+.footer-social-menu{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-social-menu ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer-social-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  border-radius: 100%;
+}
+.footer-social-menu ul li a{
+  font-size: 25px;
+}
+.footer-social-menu ul li a i{
+  line-height: 50px;
 }
 /* Navigation
 --------------------------------------------- */
@@ -976,6 +994,9 @@ button.dropdown-toggle {
 	text-align: end;
 	flex: 1 0 50%;
 }
+
+/* TEST
+--------------------------------------------- */
 
 /* Posts and pages
 --------------------------------------------- */
